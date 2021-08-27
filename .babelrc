@@ -1,0 +1,21 @@
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "@/components": "./src/components",
+          "@/constants": "./src/constants",
+          "@/containers": "./src/containers",
+          "@/service": "./src/service",
+          "@/store": "./src/store",
+          "@/styles": "./src/styles",
+          "@/utils": "./src/utils",
+          "@/hoc": "./src/hoc"
+        }
+      }
+    ],
+    ["import", { "libraryName": "antd-mobile" }]
+  ]
+}
